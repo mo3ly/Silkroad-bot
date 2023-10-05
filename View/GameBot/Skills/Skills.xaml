@@ -1,0 +1,33 @@
+﻿<Page x:Class="SRO_INGAME.View.Skills"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="725" Width="725" Height="370"
+      Title="Skills">
+
+    <Grid Background="#00000000">
+
+        <!-- Gears -->
+        <Label x:Name="sGears" MouseLeftButtonDown="Navigation" Content="Gears" HorizontalAlignment="Left" Margin="28,41,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FF7D6A42" Cursor="{StaticResource Pointer}" Width="103" Background="#33000000" BorderBrush="#4C9C9C9C" BorderThickness="1,0,0,0"/>
+
+        <!-- Attack -->
+        <Label x:Name="sAttack" MouseLeftButtonDown="Navigation" Content="Attack Skills" HorizontalAlignment="Left" Margin="28,86,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFBBBBBB" Cursor="{StaticResource Pointer}" Background="#33000000" BorderBrush="#4C9C9C9C" BorderThickness="1,0,0,0"/>
+
+        <!--- Buff -->
+        <Label x:Name="sBuff" MouseLeftButtonDown="Navigation" Content="Buff Skills" HorizontalAlignment="Left" Margin="28,134,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFBBBBBB" Cursor="{StaticResource Pointer}" Width="103" Background="#33000000" BorderBrush="#4C9C9C9C" BorderThickness="1,0,0,0"/>
+
+        <!-- Refresh -->
+        <Button x:Name="Refresh" Click="Refresh_Click" HorizontalAlignment="Left"  Margin="28,182,0,0"  VerticalAlignment="Top" Height="26" Width="26" BorderThickness="0" Cursor="{StaticResource Pointer}" ToolTip="Refresh auto-hunt data">
+            <Button.Background>
+                <ImageBrush x:Name="refreshButtonBg"/>
+            </Button.Background>
+        </Button>
+
+        <!-- Skills Frame -->
+        <Frame x:Name="mFrame" HorizontalAlignment="Left" Margin="157,41,0,0" VerticalAlignment="Top" Height="285" Width="524" Background="#33000000" BorderBrush="#199C9C9C" BorderThickness="1"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,79 @@
+﻿<Page x:Class="SRO_INGAME.View.Main.LauncherCompnents.ItemsSlider"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SRO_INGAME.View.Main.LauncherCompnents"
+      mc:Ignorable="d" 
+      d:DesignHeight="50" d:DesignWidth="325" Height="50" Width="325" x:Name="Slider"
+      Title="ItemsSlider" Cursor="{StaticResource Cursor}">
+    <Page.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Height" Value="32" />
+            <Setter Property="Width" Value="32" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Opacity" Value="1" />
+            <Style.Triggers>
+                <Trigger Property="Image.IsMouseOver" Value="True">
+                    <Setter Property="Image.Opacity" Value="0.7" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Start Default Position -->
+        <Storyboard x:Key="DefaultPosition" >
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="0" DecelerationRatio=".9" Duration="0:0:.01" />
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:.01" />
+            <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" To="1" Duration="0:0:.01" DecelerationRatio=".9" />
+            <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" To="1" Duration="0:0:.01" DecelerationRatio=".9" />
+            <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleX)" To="0" Duration="0:0:.01" DecelerationRatio=".9" />
+            <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleY)" To="0" Duration="0:0:.01" DecelerationRatio=".9" />
+            <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="0" Duration="0:0:.01" DecelerationRatio=".9" />
+        </Storyboard>
+        <!-- End Default Position -->
+
+        <!-- Start Slide Left -->
+        <Storyboard x:Key="SlideLeftIn">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="250,0,-250,0" To="0" DecelerationRatio=".9" Duration="0:0:.75" />
+        </Storyboard>
+        <Storyboard x:Key="SlideLeftOut">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="-250,0,250,0" AccelerationRatio=".9" Duration="0:0:.5" />
+        </Storyboard>
+        <!-- End Slide Left -->
+
+        <!-- Start Slide Right -->
+        <Storyboard x:Key="SlideRightIn" >
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-250,0,250,0" To="0" DecelerationRatio=".9" Duration="0:0:.75" />
+        </Storyboard>
+        <Storyboard x:Key="SlideRightOut">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin"  To="250,0,-250,0" AccelerationRatio=".9" Duration="0:0:.5" />
+        </Storyboard>
+        <!-- End Slide Down -->
+
+        <!-- Start Slide and Fade -->
+        <Storyboard x:Key="SlideAndFadeIn" >
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="250,0,-250,0" To="0" DecelerationRatio=".9" Duration="0:0:.6" />
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:.5" />
+        </Storyboard>
+        <Storyboard x:Key="SlideAndFadeOut">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="-250,0,250,0" AccelerationRatio=".9" Duration="0:0:.5" />
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:.5" />
+        </Storyboard>
+        <!-- End Slide and Fade -->
+    </Page.Resources>
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding ActualWidth, ElementName=Slider}" Background="#19000000" Height="50">
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image Panel.ZIndex="1" Margin="0,2,0,0" Height="24" HorizontalAlignment="Left" x:Name="LeftArrow" Cursor="{StaticResource Pointer}" MouseUp="imgUp_MouseUp"/>
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" VerticalAlignment="Center" HorizontalAlignment="Center" Width="230" Height="50">
+                <Canvas x:Name="ItemsCanvas" Background="#19000000">
+                    <Grid x:Name="CanvasGrid" Width="{Binding ActualWidth, ElementName=ItemsCanvas}" Height="{Binding ActualHeight, ElementName=ItemsCanvas}"/>
+                </Canvas>
+            </ScrollViewer>
+            <Image Panel.ZIndex="1" Margin="0,2,0,0" Height="24" HorizontalAlignment="Right" x:Name="RightArrow" Cursor="{StaticResource Pointer}" MouseUp="imgDown_MouseUp" />
+        </WrapPanel>
+    </StackPanel>
+</Page>

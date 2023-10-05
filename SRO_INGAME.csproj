@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36155975-6FE4-4A24-B196-649A93ABA137}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SRO_INGAME</RootNamespace>
+    <AssemblyName>SRO_INGAME</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Silkroad.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vBOT WPF\vBOT WPF\bin\Debug\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Common\ExternalDLL.cs" />
+    <Compile Include="Common\Session\SessionData.cs" />
+    <Compile Include="Common\SRCommon.cs" />
+    <Compile Include="Common\Tooltip\SlotToolTip.cs" />
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="Contollers\GameBot\BotController.cs" />
+    <Compile Include="Contollers\GameBot\BotData.cs" />
+    <Compile Include="Contollers\GameBot\ChatCommands.cs" />
+    <Compile Include="Contollers\GameBot\Logic\AutoAttack.cs" />
+    <Compile Include="Contollers\GameBot\Logic\AutoBuff.cs" />
+    <Compile Include="Contollers\GameBot\Logic\AutoPotion.cs" />
+    <Compile Include="Contollers\GameBot\Logic\AutoWalk.cs" />
+    <Compile Include="Contollers\GameBot\Logic\AutoWearGears.cs" />
+    <Compile Include="Contollers\GameBot\Logic\BotConditions.cs" />
+    <Compile Include="Contollers\Game\Popup\ItemPopup.cs" />
+    <Compile Include="Contollers\Game\Popup\SkillPopup.cs" />
+    <Compile Include="Contollers\Map\Compass.cs" />
+    <Compile Include="Contollers\Notifications\Notifier.cs" />
+    <Compile Include="Http\Controllers\StallsContoller.cs" />
+    <Compile Include="Http\Models\Stalls\CharStall.cs" />
+    <Compile Include="Http\Models\Stalls\StallItem.cs" />
+    <Compile Include="Http\Models\Stalls\Stalls.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Methods\CRTInjection.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Methods\InjectionMethod.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Methods\ManualMap.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Methods\StandardInjectionMethod.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Methods\ThreadHijack.cs" />
+    <Compile Include="Libraries\DynamicInjLib\PortableExecutable\Constants.cs" />
+    <Compile Include="Libraries\DynamicInjLib\PortableExecutable\Definitions.cs" />
+    <Compile Include="Libraries\DynamicInjLib\PortableExecutable\PortableExecutable.cs" />
+    <Compile Include="Libraries\DynamicInjLib\PortableExecutable\ResourceWalker.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Tools\ErrorBase.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Tools\MemoryIterator.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Tools\UnmanagedBuffer.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Tools\Utils.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Win32\Win32Ptr.cs" />
+    <Compile Include="Libraries\DynamicInjLib\Win32\WinAPI.cs" />
+    <Compile Include="Libraries\GameLib\Client\Actions\CaptchaImage.cs" />
+    <Compile Include="Libraries\GameLib\Client\Actions\Mapping.cs" />
+    <Compile Include="Libraries\GameLib\Client\Actions\Utility.cs" />
+    <Compile Include="Libraries\GameLib\Client\Client.cs" />
+    <Compile Include="Libraries\GameLib\Client\Dispatcher.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\BasicInfo\Movement.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\BasicInfo\Position.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\BasicInfo\State.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Chat\ChatMessage.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Gateway\Shard.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Guilds\Guild.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Info.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\InventoryItem.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\Base.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\BuffArea.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\Character.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\CharacterInfo\CharacterItem.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\COS.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\Item.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\Mob.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\Object.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Objects\Structure.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Party\Party.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Party\PartyMatchingEntry.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Quests\Objective.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Quests\Quest.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Spells\Mastery.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Spells\Skill.cs" />
+    <Compile Include="Libraries\GameLib\Client\Information\Stalls\Stall.cs" />
+    <Compile Include="Libraries\GameLib\Client\Loader\Loader.cs" />
+    <Compile Include="Libraries\GameLib\Client\Network\ClientlessConnection.cs" />
+    <Compile Include="Libraries\GameLib\Client\Network\ProxyClient.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Alchemy\AlchemyUtility.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Alchemy\EnchantResult.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Alchemy\FuseResultEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\BattleArena\BattleArenaResponseEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\BattleArena\BattleArenaResultEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\BattleArena\BattleArenaScoreEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\BattleArena\BattleArenaStateEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\BattleArena\BattleArenaTimeEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\BattleArena\Operation.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\CharacterSelection\CharacterJoinRequest.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\CharacterSelection\CharacterJoinResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\CharacterSelection\CharacterListRequest.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\CharacterSelection\CharacterListResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Character\CharacterData.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Character\ExpSPUpdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Character\InfoUpdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Character\LogOut.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Character\StatsUpdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Chat\ChatUpdated.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\COS\COSData.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\COS\COSUPdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\COS\RideState.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\CelestialPosition.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\EntitySelected.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\HPMPUpdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\ItemEquip.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\ItemUnequip.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\LevelUpAnimation.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\PositionUpdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\PVPUpdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\SpeedUpdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Entity\StateChange.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Game\Invite.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\AgentAuthRequest.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\AgentAuthResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\CaptchaCodeRequest.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\CaptchaCodeResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\CaptchaReceived.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\LoginRequest.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\LoginResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\PatchRequest.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\PatchResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\ShardRequest.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Gateway\ShardResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Global\ModuleIdentification.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\InventoryOperation.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\InventoryOperationEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\InventoryUtility.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\ItemCountUpdated.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\ItemCountUpdatedDueAlchemy.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\ItemCountUpdatedDueAlchemyEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\ItemCountUpdatedEventArgs.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\StorageInfoResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Inventory\UpdateItemDurability.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Party\EnteredParty.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Party\PartyMatchingEntryDeleted.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Party\PartyMatchingEntryFormed.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Party\PartyMatchingRequestJoin.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Party\PartyMatchingResponse.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Party\PartyUpdate.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Party\PartyUtility.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Quest\Update.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spawn\Despawn.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spawn\GroupSpawn.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spawn\SingleSpawn.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spells\BuffEnded.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spells\BuffStart.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spells\ClientSkillChannel.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spells\ClientSkillLearn.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spells\ClientSkillWithdraw.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Spells\SpellUsed.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Stall\Action.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Stall\Closed.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Stall\Created.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Stall\Entered.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Stall\Leave.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Stall\NameUpdated.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Stall\StallUtility.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Stall\Updated.cs" />
+    <Compile Include="Libraries\GameLib\Client\Packets\Utility.cs" />
+    <Compile Include="Libraries\GameLib\Helper\ViewController.cs" />
+    <Compile Include="Libraries\GameLib\Enums.cs" />
+    <Compile Include="Libraries\GameLib\Media\Data.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Base.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Division.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Item.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\MediaModel.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Region.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\ServerInfo.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Shops\Shop.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Shops\ShopGroup.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Shops\ShopItemPackage.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Shops\ShopTab.cs" />
+    <Compile Include="Libraries\GameLib\Media\DataInfo\Skill.cs" />
+    <Compile Include="Libraries\GameLib\Media\LoadData.cs" />
+    <Compile Include="Libraries\GameLib\Media\Utility.cs" />
+    <Compile Include="Libraries\GameLib\SroClient.cs" />
+    <Compile Include="Libraries\SecurityAPI\Blowfish.cs" />
+    <Compile Include="Libraries\SecurityAPI\Packet.cs" />
+    <Compile Include="Libraries\SecurityAPI\PacketReader.cs" />
+    <Compile Include="Libraries\SecurityAPI\PacketWriter.cs" />
+    <Compile Include="Libraries\SecurityAPI\Security.cs" />
+    <Compile Include="Libraries\SecurityAPI\TransferBuffer.cs" />
+    <Compile Include="Libraries\SecurityAPI\Ultility.cs" />
+    <Compile Include="Libraries\WebLib\APIClient.cs" />
+    <Compile Include="Libraries\WebLib\n_APIClient.cs" />
+    <Compile Include="View\GameBot\BotFrame.xaml.cs">
+      <DependentUpon>BotFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Hunting.xaml.cs">
+      <DependentUpon>Hunting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Potion\CharacterPotion.xaml.cs">
+      <DependentUpon>CharacterPotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Potion\PetPotion.xaml.cs">
+      <DependentUpon>PetPotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Potion\Potion.xaml.cs">
+      <DependentUpon>Potion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Skills\AttackSkills.xaml.cs">
+      <DependentUpon>AttackSkills.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Skills\BuffSkills.xaml.cs">
+      <DependentUpon>BuffSkills.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Skills\Gears.xaml.cs">
+      <DependentUpon>Gears.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Skills\Skills.xaml.cs">
+      <DependentUpon>Skills.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameBot\Statistics.xaml.cs">
+      <DependentUpon>Statistics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Guide\Guide.xaml.cs">
+      <DependentUpon>Guide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Main\Launcher.xaml.cs">
+      <DependentUpon>Launcher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Main\LauncherCompnents\ItemsSlider.xaml.cs">
+      <DependentUpon>ItemsSlider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Map\Compass.xaml.cs">
+      <DependentUpon>Compass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Navigation\Navigation.xaml.cs">
+      <DependentUpon>Navigation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SecondPass\SecondPassWindow.xaml.cs">
+      <DependentUpon>SecondPassWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Stalls\CharacterStall.xaml.cs">
+      <DependentUpon>CharacterStall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Stalls\NearbyStalls.xaml.cs">
+      <DependentUpon>NearbyStalls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\subView\Notify.xaml.cs">
+      <DependentUpon>Notify.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\subView\SoxNotify.xaml.cs">
+      <DependentUpon>SoxNotify.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Terms\TermsAndServices.xaml.cs">
+      <DependentUpon>TermsAndServices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewCharacter\ViewCharacterFrame.xaml.cs">
+      <DependentUpon>ViewCharacterFrame.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\GameBot\Potion\CharacterPotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GameBot\Potion\PetPotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GameBot\Skills\AttackSkills.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GameBot\Skills\BuffSkills.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GameBot\Skills\Gears.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GameBot\Statistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Guide\Guide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Main\Launcher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Main\LauncherCompnents\ItemsSlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Main\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contollers\GameLauncher\LauncherData.cs" />
+    <Compile Include="Libraries\ImageLib\DDS.cs" />
+    <Compile Include="Libraries\ImageLib\DDSCaps.cs" />
+    <Compile Include="Libraries\ImageLib\DDSCaps2.cs" />
+    <Compile Include="Libraries\ImageLib\DDSHeader.cs" />
+    <Compile Include="Libraries\ImageLib\DDSHeaderFlags.cs" />
+    <Compile Include="Libraries\ImageLib\DDSImageParser.cs" />
+    <Compile Include="Libraries\ImageLib\DDSPixelFlags.cs" />
+    <Compile Include="Libraries\ImageLib\DDSPixelFormat.cs" />
+    <Compile Include="Libraries\ImageLib\DDSReader.cs" />
+    <Compile Include="Libraries\ImageLib\DDSVariant.cs" />
+    <Compile Include="Libraries\ImageLib\GDImageLibrary.cs" />
+    <Compile Include="Libraries\ImageLib\Texture.cs" />
+    <Compile Include="View\Main\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\GameBot\BotFrame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\GameBot\Hunting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\GameBot\Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\GameBot\Potion\Potion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\GameBot\Skills\Skills.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Map\Compass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Navigation\Navigation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SecondPass\SecondPassWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Stalls\CharacterStall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Stalls\NearbyStalls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Styles\Checkbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\Cursors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\ListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\RadioButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\Scrollbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\Slider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\TextControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\ToolTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\subView\Notify.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\subView\SoxNotify.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Terms\TermsAndServices.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ViewCharacter\ViewCharacterFrame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Libraries\PK2Lib\EntrySet\File.cs" />
+    <Compile Include="Libraries\PK2Lib\EntrySet\Folder.cs" />
+    <Compile Include="Libraries\PK2Lib\PK2Reader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\characterView.png" />
+    <Resource Include="Resources\all_spotion_01.png" />
+    <Resource Include="Resources\bg.png" />
+    <Resource Include="Resources\bg2.png" />
+    <Resource Include="Resources\blade_09.png" />
+    <Resource Include="Resources\button.png" />
+    <Resource Include="Resources\Cursor.cur" />
+    <Resource Include="Resources\ico-search.png" />
+    <Resource Include="Resources\laucnher-start-button.png" />
+    <Resource Include="Resources\notification_bg.png" />
+    <Resource Include="Resources\notify.png" />
+    <Resource Include="Resources\panel_expanded.png" />
+    <Resource Include="Resources\panel_not_expanded.png" />
+    <Resource Include="Resources\Pointer.cur" />
+    <Resource Include="Resources\slider-thumb-hover.png" />
+    <Resource Include="Resources\slider-thumb.png" />
+    <Resource Include="Resources\slider.png" />
+    <Resource Include="Resources\soxglow.gif" />
+    <Resource Include="Resources\sox_effect.gif" />
+    <Resource Include="Resources\sox_frame.png" />
+    <Resource Include="Resources\UI-icons\ico-hunt.png" />
+    <Resource Include="Resources\UI-icons\ico-login.png" />
+    <Resource Include="Resources\UI-icons\ico-potion.png" />
+    <Resource Include="Resources\UI-icons\ico-skills.png" />
+    <Resource Include="Resources\navigation-bg.png" />
+    <Resource Include="Resources\Compass\Compass-bg.png" />
+    <Resource Include="Resources\Compass\Compass.png" />
+    <Resource Include="Resources\map.jpg" />
+    <Resource Include="Resources\zone-circle.gif" />
+    <Resource Include="Silkroad.ico" />
+    <Content Include="Newtonsoft.Json.dll" />
+    <None Include="Resources\ClientLib.dll" />
+    <Content Include="WpfAnimatedGif.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\Achievements\" />
+    <Folder Include="View\GamePass\" />
+    <Folder Include="View\MiniGames\LuckyBox\" />
+    <Folder Include="View\MiniGames\WheelOfFortune\" />
+    <Folder Include="View\PlayerInformation\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

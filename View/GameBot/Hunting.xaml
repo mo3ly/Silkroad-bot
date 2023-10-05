@@ -1,0 +1,170 @@
+﻿<Page x:Class="SRO_INGAME.View.Hunting"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SRO_INGAME.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="725" Width="725" Height="370"
+      Title="Hunting">
+
+    <Grid Background="#00000000">
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="103,12,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Huntting range" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Margin="104,-25,10,0" Height="25" Foreground="#FFD4D4D4" BorderThickness="2" BorderBrush="#FF272728" FontFamily="Times New Roman" Cursor="{StaticResource Pointer}">
+                    <ComboBoxItem Content="100m" IsSelected="True"/>
+                    <ComboBoxItem Content="200m"/>
+                    <ComboBoxItem Content="500m"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="103,70,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Berseark Mode" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Margin="104,-25,10,0" Height="25" Foreground="#FFD4D4D4" BorderThickness="2" BorderBrush="#FF272728" FontFamily="Times New Roman" Cursor="{StaticResource Pointer}">
+                    <ComboBoxItem Content="Giant" IsSelected="True"/>
+                    <ComboBoxItem Content="Champion"/>
+                    <ComboBoxItem Content="Normal"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="103,130,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Auto-Resurrect" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Margin="104,-25,10,0" Height="25" Foreground="#FFD4D4D4" BorderThickness="2" BorderBrush="#FF272728" FontFamily="Times New Roman" Cursor="{StaticResource Pointer}">
+                    <ComboBoxItem Content="Use Resurrect Scroll" IsSelected="True"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="103,193,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Auto-Return" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Margin="104,-25,10,0" Height="25" Foreground="#FFD4D4D4" BorderThickness="2" BorderBrush="#FF272728" FontFamily="Times New Roman" Cursor="{StaticResource Pointer}">
+                    <ComboBoxItem Content="In 10 Hours" IsSelected="True"/>
+                    <ComboBoxItem Content="In 5 Hours"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="103,255,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Auto-Repair" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Margin="104,-25,10,0" Height="25" Foreground="#FFD4D4D4" BorderThickness="2" BorderBrush="#FF272728" FontFamily="Times New Roman" Cursor="{StaticResource Pointer}">
+                    <ComboBoxItem Content="Use Repair Scroll" IsSelected="True"/>
+                    <ComboBoxItem Content="Return to town"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="417,12,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Use Energy of Life" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <CheckBox Content="" HorizontalAlignment="Left" Margin="200,-21,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.15,-1.667" Foreground="#FFBBBBBB" FontFamily="Times New Roman" FontSize="14" IsChecked="True" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="417,70,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Return when HP/MP potion ..." Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB" ToolTip="Return when there isn't enoght HP/MP potions."/>
+                <CheckBox Content="" HorizontalAlignment="Left" Margin="200,-21,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.15,-1.667" Foreground="#FFBBBBBB" FontFamily="Times New Roman" FontSize="14" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="417,130,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Auto-Pick" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <CheckBox Content="" HorizontalAlignment="Left" Margin="200,-21,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.15,-1.667" Foreground="#FFBBBBBB" FontFamily="Times New Roman" FontSize="14" IsChecked="True" IsEnabled="False" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="417,193,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Return when full Inventory" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <CheckBox Content="" HorizontalAlignment="Left" Margin="200,-21,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.15,-1.667" Foreground="#FFBBBBBB" FontFamily="Times New Roman" FontSize="14" IsChecked="True" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="417,255,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Return when low durability" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <CheckBox Content="" HorizontalAlignment="Left" Margin="200,-21,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.15,-1.667" Foreground="#FFBBBBBB" FontFamily="Times New Roman" FontSize="14" IsChecked="True" IsEnabled="False" />
+            </StackPanel>
+        </StackPanel>
+
+        <!-- attack buffs option -->
+        <StackPanel HorizontalAlignment="Left" Height="39" Margin="103,318,0,0" VerticalAlignment="Top" Width="230" Background="#FF424141">
+            <StackPanel Height="37" Margin="0">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF1F1F1F" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label Content="Skill-Skills" Margin="0,4,0,0" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="14" Foreground="#FFBBBBBB"/>
+                <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Margin="104,-25,10,0" Height="25" Foreground="#FFD4D4D4" FontFamily="Times New Roman" Cursor="{StaticResource Pointer}">
+                    <ComboBoxItem Content="Same order" IsSelected="True"/>
+                    <ComboBoxItem Content="Randomly"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

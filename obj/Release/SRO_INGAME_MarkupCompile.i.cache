@@ -1,0 +1,20 @@
+﻿SRO_INGAME
+
+
+winexe
+C#
+.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Release\
+SRO_INGAME
+none
+false
+TRACE
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\App.xaml
+35-1007805762
+2748673547
+220145108591
+16784117145
+View\GameBot\Potion\CharacterPotion.xaml;View\GameBot\Potion\PetPotion.xaml;View\GameBot\Skills\AttackSkills.xaml;View\GameBot\Skills\BuffSkills.xaml;View\GameBot\Skills\Gears.xaml;View\GameBot\Statistics.xaml;View\Guide\Guide.xaml;View\Main\Launcher.xaml;View\Main\LauncherCompnents\ItemsSlider.xaml;View\Main\MainWindow.xaml;View\GameBot\BotFrame.xaml;View\GameBot\Hunting.xaml;View\GameBot\Login.xaml;View\GameBot\Potion\Potion.xaml;View\GameBot\Skills\Skills.xaml;View\Map\Compass.xaml;View\Navigation\Navigation.xaml;View\SecondPass\SecondPassWindow.xaml;View\Stalls\CharacterStall.xaml;View\Stalls\NearbyStalls.xaml;View\Styles\Buttons.xaml;View\Styles\DataGrid.xaml;View\Styles\Checkbox.xaml;View\Styles\ComboBox.xaml;View\Styles\Cursors.xaml;View\Styles\ListView.xaml;View\Styles\RadioButton.xaml;View\Styles\Scrollbar.xaml;View\Styles\Slider.xaml;View\Styles\TextControl.xaml;View\Styles\ToolTip.xaml;View\subView\Notify.xaml;View\subView\SoxNotify.xaml;View\Terms\TermsAndServices.xaml;View\ViewCharacter\ViewCharacterFrame.xaml;
+
+True
+

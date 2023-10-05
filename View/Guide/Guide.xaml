@@ -1,0 +1,171 @@
+﻿<Page x:Class="SRO_INGAME.View.Guide.Guide"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      xmlns:local="clr-namespace:SRO_INGAME.View.Guide"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="725" Width="725" Height="370"
+      Title="Guide">
+
+    <Page.Resources>
+        <Style TargetType="{x:Type TabItem}">
+            <!--<Setter Property="FontFamily" Value="Times New Roman" />-->
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Foreground" Value="#FFFDFDFD" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Border x:Name="PART_Border" Background="{TemplateBinding Background}" BorderThickness="1" BorderBrush="#FF323232" Margin="2">
+                            <ContentPresenter ContentSource="Header" Margin="2" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="PART_Border" Property="BorderBrush" Value="#FF404040" />
+                                <Setter TargetName="PART_Border" Property="Background" Value="#FF232323" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type TabControl}">
+            <Setter Property="TabStripPlacement" Value="Left" />
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="Padding" Value="2"    />
+            <Setter Property="Background" Value="Black" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabControl}">
+                        <Grid ClipToBounds="True" SnapsToDevicePixels="True" KeyboardNavigation.TabNavigation="Local">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Name="ColumnDefinition0" />
+                                <ColumnDefinition Width="0" Name="ColumnDefinition1" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" Name="RowDefinition0" />
+                                <RowDefinition Height="*" Name="RowDefinition1" />
+                            </Grid.RowDefinitions>
+                            <Border x:Name="HeaderBorder"
+                            BorderBrush="#FF232323"
+                            BorderThickness="1"
+                            CornerRadius="5"
+                            Background="#FF080808"
+                            Margin="0,0,0,5">
+                                <TabPanel IsItemsHost="True"
+                                  Name="HeaderPanel"
+                                  Panel.ZIndex="1"
+                                  KeyboardNavigation.TabIndex="1"
+                                  Grid.Column="0"
+                                  Grid.Row="0" />
+                            </Border>
+                            <Grid Name="ContentPanel"
+                          KeyboardNavigation.TabIndex="2"
+                          KeyboardNavigation.TabNavigation="Local"
+                          KeyboardNavigation.DirectionalNavigation="Contained"
+                          Grid.Column="0"
+                          Grid.Row="1">
+                                <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+                                    <ContentPresenter Content="{TemplateBinding SelectedContent}"
+                                              ContentTemplate="{TemplateBinding SelectedContentTemplate}"
+                                              ContentStringFormat="{TemplateBinding SelectedContentStringFormat}"
+                                              ContentSource="SelectedContent"
+                                              Name="PART_SelectedContentHost"
+                                              Margin="2"
+                                              SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                                </Border>
+                            </Grid>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="TabControl.TabStripPlacement" Value="Bottom">
+                                <Setter TargetName="HeaderPanel" Property="Grid.Row" Value="1" />
+                                <Setter TargetName="ContentPanel" Property="Grid.Row" Value="0" />
+                                <Setter TargetName="RowDefinition0" Property="RowDefinition.Height" Value="*" />
+                                <Setter TargetName="RowDefinition1" Property="RowDefinition.Height" Value="Auto" />
+                                <Setter TargetName="HeaderBorder" Property="FrameworkElement.Margin" Value="0,5,0,0" />
+                            </Trigger>
+                            <Trigger Property="TabControl.TabStripPlacement" Value="Left">
+                                <Setter TargetName="HeaderPanel" Property="Grid.Row" Value="0" />
+                                <Setter TargetName="ContentPanel" Property="Grid.Row" Value="0" />
+                                <Setter TargetName="HeaderPanel" Property="Grid.Column" Value="0" />
+                                <Setter TargetName="ContentPanel" Property="Grid.Column" Value="1" />
+                                <Setter TargetName="ColumnDefinition0" Property="ColumnDefinition.Width" Value="Auto" />
+                                <Setter TargetName="ColumnDefinition1" Property="ColumnDefinition.Width" Value="*" />
+                                <Setter TargetName="RowDefinition0" Property="RowDefinition.Height" Value="*" />
+                                <Setter TargetName="RowDefinition1" Property="RowDefinition.Height" Value="0" />
+                                <Setter TargetName="HeaderBorder" Property="FrameworkElement.Margin" Value="0,0,5,0" />
+                            </Trigger>
+                            <Trigger Property="TabControl.TabStripPlacement" Value="Right">
+                                <Setter TargetName="HeaderPanel" Property="Grid.Row" Value="0" />
+                                <Setter TargetName="ContentPanel" Property="Grid.Row" Value="0" />
+                                <Setter TargetName="HeaderPanel" Property="Grid.Column" Value="1" />
+                                <Setter TargetName="ContentPanel" Property="Grid.Column" Value="0" />
+                                <Setter TargetName="ColumnDefinition0" Property="ColumnDefinition.Width" Value="*" />
+                                <Setter TargetName="ColumnDefinition1" Property="ColumnDefinition.Width" Value="Auto" />
+                                <Setter TargetName="RowDefinition0" Property="RowDefinition.Height" Value="*" />
+                                <Setter TargetName="RowDefinition1" Property="RowDefinition.Height" Value="0" />
+                                <Setter TargetName="HeaderBorder" Property="FrameworkElement.Margin" Value="5,0,0,0" />
+                            </Trigger>
+                            <Trigger Property="UIElement.IsEnabled" Value="False">
+                                <Setter Property="TextElement.Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="360" Margin="10,5,0,0" VerticalAlignment="Top" Width="705"  BorderBrush="#FF252525" Foreground="#FFA2A2A2">
+            <TabItem Header="Chat Commands">
+                <Grid Background="Black">
+                    <Label Content="Block" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="25" Foreground="#FF7D6A42"/>
+                    <Label Content="→ \block exc &lt; charname &gt;" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FFB4B4B4" Background="#FF1D1D1D"/>
+                    <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="10,462,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Block this character from sending exchange." HorizontalAlignment="Left" Margin="181,49,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FFB4B4B4" Background="#00000000"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Auto hunt">
+                <Grid Background="Black"/>
+            </TabItem>
+            <TabItem Header="Wheel of fortune">
+                <Grid Background="Black"/>
+            </TabItem>
+            <TabItem Header="Map Test">
+                <Grid Background="Black">
+                    <Image HorizontalAlignment="Left" Height="281" Margin="94,43,0,0" VerticalAlignment="Top" Width="408" Source="D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\Resources/map.jpg"/>
+                    <!-- Anitmation -->
+                    <StackPanel Margin="10">
+                        <Rectangle x:Name="MyRectangle"  Height="246" Fill="#A51960DC" Margin="84,35,81,0">
+                            <Rectangle.Triggers>
+                                <!-- Animates the rectangle's opacity. -->
+                                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="MyRectangle" 
+                                                Storyboard.TargetProperty="Opacity"
+                                                From="1.0" To="0.0" Duration="0:0:5" 
+                                                AutoReverse="True" RepeatBehavior="Forever" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Rectangle.Triggers>
+                        </Rectangle>
+                    </StackPanel>
+                    <Image x:Name="zoneCircle" gif:ImageBehavior.AnimatedSource="C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\Resources\zone-circle.gif" Margin="90,62,82,90" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="1.5" ScaleY="1.5" ></ScaleTransform>
+                        </Image.RenderTransform>
+                    </Image>
+                    <!--/ Anitmation -->
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

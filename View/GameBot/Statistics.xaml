@@ -1,0 +1,68 @@
+﻿<Page x:Class="SRO_INGAME.View.Statistics"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      xmlns:local="clr-namespace:SRO_INGAME.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="725" Width="725" Height="380"
+      Title="Statistics">
+
+    <Grid>
+        <Label Content="Total kills:" HorizontalAlignment="Left" Margin="39,30,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FFB4B4B4"/>
+        <Label Content="150" HorizontalAlignment="Left" Margin="39,48,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="25" Foreground="#FF7D6A42"/>
+
+        <Label Content="Picked items" HorizontalAlignment="Left" Margin="208,30,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FFB4B4B4"/>
+        <Label Content="150" HorizontalAlignment="Left" Margin="208,48,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="25" Foreground="#FF7D6A42"/>
+
+        <Label Content="Remaining hours" HorizontalAlignment="Left" Margin="39,154,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FFB4B4B4"/>
+        <Label Content="30 mins" HorizontalAlignment="Left" Margin="39,172,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="25" Foreground="#FF7D6A42"/>
+
+        <Label Content="Gold gained" HorizontalAlignment="Left" Margin="38,295,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FFB4B4B4"/>
+        <Label Content="100,300" HorizontalAlignment="Left" Margin="208,172,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="25" Foreground="#FF7D6A42"/>
+
+        <Label Content="Gained SP" HorizontalAlignment="Left" Margin="208,295,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FFB4B4B4"/>
+        <Label Content="230,302" HorizontalAlignment="Left" Margin="208,313,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="25" Foreground="#FF7D6A42"/>
+
+        <Label Content="Gained EXP" HorizontalAlignment="Left" Margin="208,154,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FFB4B4B4"/>
+        <Label Content="300" HorizontalAlignment="Left" Margin="38,313,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="25" Foreground="#FF7D6A42"/>
+
+        <!-- Nearby Items -->
+        <DataGrid x:Name="NearbyItemsGrid" CanUserSortColumns="False" GridLinesVisibility="None" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" CanUserResizeRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserAddRows="False" SelectionMode="Single" SelectionUnit="FullRow" CanUserReorderColumns="False"  AutoGenerateColumns="False" HorizontalAlignment="Left" Height="322" Margin="386,30,0,0" VerticalAlignment="Top" Width="312">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn IsReadOnly="True" Header="Item"  MaxWidth="70" Width="70">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Width="20" Height="20" HorizontalAlignment="Left">
+                                <Image HorizontalAlignment="Left" Source="{Binding Item}" ToolTip="{Binding ItemTooltip}" />
+                                <Image HorizontalAlignment="Left" gif:ImageBehavior.AnimatedSource="C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\Resources\soxglow.gif"  Visibility="{Binding Sox}" Margin="0,-20,0,0" ToolTip="{Binding ItemTooltip}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn  IsReadOnly="True" Header="Name" Binding="{Binding Name}" MaxWidth="180" Width="180"/>
+
+                <DataGridTemplateColumn IsReadOnly="True" Header=""  MaxWidth="62" Width="62">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button HorizontalAlignment="Center" Click="PickButton_OnClick" Tag="{Binding UID}" Content="Collect" Foreground="#FFDADADA" FontSize="10" Width="52" Height="20" BorderBrush="Transparent">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="{Binding ButtonSrc}" />
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="RefreshButton" Click="RefreshButton_Click"  HorizontalAlignment="Left"  Margin="361,36,0,0"  VerticalAlignment="Top" Height="20" Width="20" BorderThickness="0" Cursor="{StaticResource Pointer}" ToolTip="Refresh nearby items data">
+            <Button.Background>
+                <ImageBrush x:Name="RefreshNearbyBG"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="NearbyCountLabel" Content="Nearby Items: 0 item(s)" HorizontalAlignment="Left" Margin="555,31,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Foreground="#FF7D6A42"/>
+
+    </Grid>
+</Page>

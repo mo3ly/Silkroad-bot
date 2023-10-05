@@ -1,0 +1,70 @@
+﻿<Page x:Class="SRO_INGAME.View.Stalls.NearbyStalls"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SRO_INGAME.View.Stalls"
+      mc:Ignorable="d" 
+      d:DesignHeight="435" d:DesignWidth="736" Height="435" Width="736" Loaded="Page_Loaded"
+      Title="NearbyStalls">
+
+    <Grid>
+        <Label x:Name="labelStallsCount" Content="Nearby Stalls: 0" HorizontalAlignment="Left" Margin="42,29,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Foreground="#FFAEAEAE"/>
+
+        <!-- Pagination -->
+        <Button x:Name="PrevPageButton" HorizontalAlignment="Right"  Margin="0,40,101,0"  VerticalAlignment="Top" Height="16" Width="16" BorderThickness="0" Cursor="{StaticResource Pointer}" ToolTip="Previous Page.">
+            <Button.Background>
+                <ImageBrush x:Name="PrevPageButtonBG"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="PaginationNumberLabel" Style="{StaticResource srTextbox}" Margin="641,38,0,0" Text="0" IsReadOnly="True" Width="30" Padding="1" Height="19" TextAlignment="Center" Background="#FF191919" BorderThickness="1" Foreground="#FFCDCBCB"/>
+        <Button x:Name="NextPageButton" HorizontalAlignment="Right"  Margin="0,40,43,0"  VerticalAlignment="Top" Height="16" Width="16" BorderThickness="0" Cursor="{StaticResource Pointer}" ToolTip="Next page.">
+            <Button.Background>
+                <ImageBrush x:Name="NextPageButtonBG"/>
+            </Button.Background>
+        </Button>
+        
+        <!-- Nearby Stalls -->
+        <DataGrid Style="{StaticResource xStlalDataGrid}" x:Name="NearbyStallsGrid" CanUserSortColumns="False" GridLinesVisibility="Horizontal" HorizontalScrollBarVisibility="Hidden" CanUserResizeRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserAddRows="False" SelectionMode="Single" SelectionUnit="FullRow" CanUserReorderColumns="False"  AutoGenerateColumns="False" HorizontalAlignment="Left" Height="365" Margin="42,38,0,0" VerticalAlignment="Top" Width="651">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn IsReadOnly="True" Header=""  MaxWidth="70" Width="70">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel HorizontalAlignment="Left" Height="45" Width="45">
+                                <Image HorizontalAlignment="Left" Source="{Binding Icon}" ToolTip="Location x: -50 y: 904" Stretch="Fill" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn IsReadOnly="True" Header="" Binding="{Binding Name}" MaxWidth="100" Width="100"/>
+                <DataGridTextColumn IsReadOnly="True" Header="" Binding="{Binding ItemsCount}" MaxWidth="90" Width="90"/>
+                <DataGridTextColumn IsReadOnly="True" Header="" Binding="{Binding Location}"  MaxWidth="160" Width="160"/>
+                <DataGridTextColumn IsReadOnly="True" Header="" Binding="{Binding Date}" MaxWidth="160" Width="160"/>
+
+                <DataGridTemplateColumn IsReadOnly="True" Header="" MaxWidth="52" Width="52">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button HorizontalAlignment="Center" Click="StallDetails_OnClick" Tag="{Binding StallID}" Content="Details" Foreground="#FFDADADA" FontSize="10" Width="52" Height="20" BorderBrush="Transparent">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="{Binding ButtonSrc}" />
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Overlay -->
+        <StackPanel x:Name="Overlay" Background="#90000000" Margin="42,65,43,32" Visibility="Hidden"/>
+
+        <!-- No stalls message -->
+        <Border x:Name="EmptyStallLabel" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF494949" BorderThickness="1" Padding="2" CornerRadius="4" Visibility="Collapsed">
+            <Label Content="There is no avaliable stalls right now." FontFamily="Times New Roman" FontSize="18" Foreground="#FFBDBDBD"></Label>
+        </Border>
+
+        <!-- Stall Frame -->
+        <Frame x:Name="stallFrame" Width="416" Height="239"/>
+    </Grid>
+</Page>

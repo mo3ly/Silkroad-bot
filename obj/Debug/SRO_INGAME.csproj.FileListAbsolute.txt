@@ -1,0 +1,154 @@
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.csprojAssemblyReference.cache
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\MainWindow.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\BotFrame.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Hunting.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Login.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Navigation\Navigation.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\SecondPass\SecondPassWindow.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\subView\Notify.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\subView\SoxNotify.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Terms\TermsAndServices.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\ViewCharacter\ViewCharacterFrame.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\App.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME_Content.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME_MarkupCompile.cache
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME_MarkupCompile.lref
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\bin\Debug\SRO_INGAME.exe.config
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\bin\Debug\SRO_INGAME.exe
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\bin\Debug\SRO_INGAME.pdb
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\bin\Debug\WpfAnimatedGif.dll
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\App.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\MainWindow.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\BotFrame.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Hunting.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Login.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Navigation\Navigation.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\SecondPass\SecondPassWindow.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\subView\Notify.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\subView\SoxNotify.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Terms\TermsAndServices.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\ViewCharacter\ViewCharacterFrame.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.g.resources
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.Properties.Resources.resources
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.csproj.GenerateResource.cache
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.csproj.CoreCompileInputs.cache
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.csproj.CopyComplete
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.exe
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.pdb
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\Launcher.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\Launcher.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Statistics.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Statistics.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Guide\Guide.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Map\Compass.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Stalls\NearbyStalls.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Guide\Guide.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Map\Compass.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Stalls\NearbyStalls.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Buttons.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Checkbox.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\ComboBox.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Cursors.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\ListView.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\RadioButton.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Scrollbar.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Slider.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\TextControl.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\ToolTip.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\bin\Debug\Newtonsoft.Json.dll
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\Potion.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\Skills.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\CharacterPotion.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\PetPotion.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\AttackSkills.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\BuffSkills.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\Gears.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\LauncherCompnents\ItemsSlider.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\Potion.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\Skills.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\CharacterPotion.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\PetPotion.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\AttackSkills.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\BuffSkills.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\Gears.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\LauncherCompnents\ItemsSlider.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\DataGrid.baml
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Stalls\CharacterStall.g.cs
+D:\disk\Games\Visual Studio Projects\SRO_INGAME\SRO_INGAME\obj\Debug\View\Stalls\CharacterStall.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\bin\Debug\SRO_INGAME.exe.config
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\bin\Debug\SRO_INGAME.exe
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\bin\Debug\SRO_INGAME.pdb
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\bin\Debug\WpfAnimatedGif.dll
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.csproj.AssemblyReference.cache
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\Potion.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\Skills.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\DataGrid.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\subView\SoxNotify.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\CharacterPotion.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\PetPotion.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\AttackSkills.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\BuffSkills.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\Gears.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Statistics.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Guide\Guide.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\Launcher.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\LauncherCompnents\ItemsSlider.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\MainWindow.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\BotFrame.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Hunting.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Login.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\Potion.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\Skills.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Map\Compass.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Navigation\Navigation.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\SecondPass\SecondPassWindow.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Stalls\CharacterStall.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Stalls\NearbyStalls.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\subView\Notify.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\subView\SoxNotify.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Terms\TermsAndServices.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\ViewCharacter\ViewCharacterFrame.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\App.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME_Content.g.cs
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME_MarkupCompile.cache
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME_MarkupCompile.lref
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\App.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\CharacterPotion.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Potion\PetPotion.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\AttackSkills.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\BuffSkills.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Skills\Gears.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Statistics.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Guide\Guide.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\Launcher.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\LauncherCompnents\ItemsSlider.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Main\MainWindow.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\BotFrame.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Hunting.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\GameBot\Login.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Map\Compass.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Navigation\Navigation.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\SecondPass\SecondPassWindow.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Stalls\CharacterStall.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Stalls\NearbyStalls.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Buttons.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Checkbox.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\ComboBox.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Cursors.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\ListView.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\RadioButton.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Scrollbar.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\Slider.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\TextControl.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Styles\ToolTip.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\subView\Notify.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\Terms\TermsAndServices.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\View\ViewCharacter\ViewCharacterFrame.baml
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.g.resources
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.Properties.Resources.resources
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.csproj.GenerateResource.cache
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.csproj.CoreCompileInputs.cache
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.csproj.CopyComplete
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.exe
+C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\obj\Debug\SRO_INGAME.pdb

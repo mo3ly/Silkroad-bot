@@ -1,0 +1,54 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SRO_INGAME.View.GameBot.Skills"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com" x:Class="SRO_INGAME.View.GameBot.Skills.BuffSkills"
+      mc:Ignorable="d" 
+      d:DesignHeight="285" d:DesignWidth="524" Height="285" Width="524" 
+      Title="BuffSkills">
+
+    <Grid>
+        <!--- selected buff gears -->
+
+        <!--- buff skills -->
+        <Label x:Name="buffsLabel"  Content="Buff Skills [0] skills(s)" HorizontalAlignment="Left" Margin="62,35,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" Foreground="#FF7D6A42"/>
+        <Label x:Name="selectedBuffsLabel"  Content="Selected: 0 Skill(s)" HorizontalAlignment="Left" Margin="359,36,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="11" Foreground="#FF7C7C7C"/>
+        <StackPanel Width="402" Height="174" Margin="62,66,60,45" Background="#FF252525">
+            <ScrollViewer VerticalAlignment="Center"  HorizontalAlignment="Center"  VerticalScrollBarVisibility="Auto" Background="#FF111111" Width="400" Height="170"  Margin="1,0">
+                <Grid Height="Auto" Width="Auto" x:Name="BuffsRootFrame">
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <StackPanel  HorizontalAlignment="Left" VerticalAlignment="Top" />
+                </Grid>
+            </ScrollViewer>
+        </StackPanel>
+
+    </Grid>
+</Page>

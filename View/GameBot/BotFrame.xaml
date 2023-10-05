@@ -1,0 +1,66 @@
+﻿<Page x:Class="SRO_INGAME.View.GameBot.BotFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SRO_INGAME.View.GameBot"
+      mc:Ignorable="d" 
+      d:DesignHeight="435" d:DesignWidth="736" Height="435" Width="736"
+      Title="BotFrame">
+
+    <Grid>
+        <Button Style="{StaticResource srHomeButton}" x:Name="Statistics" Width="184" Height="57" Click="Navigation">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#1E000000"/>
+                    <GradientStop Color="#4CC3A053" Offset="0.8"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal" Height="34" Width="150" >
+                <Image Source="C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\Resources\UI-icons\ico-login.png" Width="49" Margin="10,6" OpacityMask="Black"/>
+                <Label Padding="0" Content="STATISTICS" Width="80" VerticalAlignment="Center"  HorizontalAlignment="Center" Foreground="#FF979797" Margin="0,9"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{StaticResource srHomeButton}" x:Name="Potion" Margin="184,0,0,0" Width="185" Height="57" Click ="Navigation">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#00000000" Offset="0.183"/>
+                    <GradientStop Color="#B2343434" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal" Height="34" Width="150" >
+                <Image Source="C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\Resources\UI-icons\ico-potion.png" Width="49" Margin="10,6"/>
+                <Label Padding="0" Content="POTION" Width="80" VerticalAlignment="Center"  HorizontalAlignment="Center" Foreground="#FF979797" Margin="0,9"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{StaticResource srHomeButton}" x:Name="Skills" Margin="369,0,0,0" Width="185" Height="57" Click="Navigation">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#00000000" Offset="0.183"/>
+                    <GradientStop Color="#B2343434" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal" Height="34" Width="150" >
+                <Image Source="C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\Resources\UI-icons\ico-SKILLS.png" Width="49" Margin="10,6"/>
+                <Label Padding="0" Content="SKILLS" Width="80" VerticalAlignment="Center"  HorizontalAlignment="Center" Foreground="#FF979797" Margin="0,9"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{StaticResource srHomeButton}" x:Name="Hunting" Margin="554,0,0,0" Width="181" Height="57" Click="Navigation">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#00000000" Offset="0.183"/>
+                    <GradientStop Color="#B2343434" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal" Height="34" Width="150" >
+                <Image Source="D:\disk\Games\Visual Studio Projects\\SRO_INGAME\SRO_INGAME\Resources\UI-icons\ico-hunt.png" Width="49" Margin="10,6"/>
+                <Label Padding="0" Content="HUNTING" Width="80" VerticalAlignment="Center"  HorizontalAlignment="Center" Foreground="#FF979797" Margin="0,9"/>
+            </StackPanel>
+        </Button>
+
+        <Frame x:Name="mContent" Margin="5,62,6,3" NavigationUIVisibility="Hidden" Width="725" Height="370" Navigating="MainFrame_OnNavigating" Foreground="#FFB2B2B2" />
+    </Grid>
+</Page>

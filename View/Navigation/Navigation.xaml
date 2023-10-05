@@ -1,0 +1,104 @@
+﻿<Window x:Class="SRO_INGAME.View.Navigation.Navigation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SRO_INGAME.View.Navigation"
+        mc:Ignorable="d"
+        Title="Navigation" Height="180" Width="109" WindowStyle="None" AllowsTransparency="True" Topmost="True" ResizeMode="NoResize" Background="Transparent" Foreground="#FFE60B0B" Cursor="{StaticResource Cursor}" x:Name="mWindow" ShowInTaskbar="False" Opacity="0.7">
+    <Grid MouseEnter="mWindow_GotMouseCapture" MouseLeave="mWindow_LostMouseCapture">
+        <Image x:Name="wBackground" Stretch="None" UseLayoutRounding="True" SnapsToDevicePixels="True" Source="/Resources/navigation-bg.png"></Image>
+        <Label Content="GAME MENU" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FF7D6A42" FontFamily="Times New Roman" FontSize="10" FontWeight="Black" Background="#00000000">
+            <Label.Effect>
+                <DropShadowEffect Color="#FF522500" ShadowDepth="1" Direction="20" BlurRadius="3"/>
+            </Label.Effect>
+        </Label>
+        <DockPanel HorizontalAlignment="Left" Height="36" LastChildFill="false" VerticalAlignment="Top" Width="109" MouseDown="Navigation_MouseDown" MouseMove="Navigation_MouseMove">
+            <DockPanel.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </DockPanel.Background>
+        </DockPanel>
+        <Button x:Name="visibiltyButton" Content="⮟" HorizontalAlignment="Left" VerticalAlignment="Top" Width="17" Background="{x:Null}" Foreground="#FF7D6A42" FontWeight="Bold" FontFamily="Calibri" Height="16" BorderBrush="{x:Null}" BorderThickness="0" FontSize="10" Margin="85,12,0,0" Click="visibiltyButton_Click"/>
+        <!--- bot section -->
+        <Button x:Name="BotActionButton" Content="START BOT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Background="{x:Null}" FontFamily="Times New Roman" Height="16" BorderBrush="{x:Null}" BorderThickness="0" FontSize="10" Margin="10,41,0,0" Click="BotAction_Click" Foreground="#FFE0E0E0">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="3" Direction="20" ShadowDepth="1"/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="botStatusLabel" Content="OFF" HorizontalAlignment="Left" Margin="79,37,0,0" VerticalAlignment="Top" Foreground="#FF7D6A42" FontFamily="Times New Roman" FontSize="10" Background="#00000000" Height="20">
+            <Label.Effect>
+                <DropShadowEffect Color="#FF522500" ShadowDepth="1" Direction="20" BlurRadius="3"/>
+            </Label.Effect>
+        </Label>
+        <ScrollViewer x:Name="nPanel" HorizontalAlignment="Left" Height="112" Margin="7,63,0,0" VerticalAlignment="Top" Width="96" VerticalScrollBarVisibility="Hidden">
+            <StackPanel>
+                <!-- Hunt button -->
+                <Button Content="AUTO HUNT" Style="{StaticResource srHomeButton}" FontSize="10" Foreground="#FFE0E0E0" x:Name="HuntButton" Click="HuntButton_Click" Width="96" Height="28" BorderThickness="0,0,0,1" BorderBrush="#B2000000">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0.183"/>
+                            <GradientStop Color="#CC000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="CHAR INFO" Style="{StaticResource srHomeButton}" FontSize="10" Foreground="#FFE0E0E0"  x:Name="ViewCharButton" Click="ViewCharButton_Click" Width="96" Height="28" BorderThickness="0,0,0,1" ToolTip="Show selected character information." BorderBrush="#B2000000">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0.183"/>
+                            <GradientStop Color="#CC000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="LIVE CHEST" Style="{StaticResource srHomeButton}" FontSize="10" Foreground="#FFE0E0E0"  x:Name="LiveChestButton" Width="96" Height="28" BorderThickness="0,0,0,1" BorderBrush="#B2000000">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0.183"/>
+                            <GradientStop Color="#CC000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="NEAR STALLS" Style="{StaticResource srHomeButton}" FontSize="10" Foreground="#FFE0E0E0"  x:Name="NearStallsButton" Click="NearStallsButton_Click" Width="96" Height="28" BorderThickness="0,0,0,1" BorderBrush="#B2000000">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0.183"/>
+                            <GradientStop Color="#CC000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="WEB SHOP" Style="{StaticResource srHomeButton}" FontSize="10" Foreground="#FFE0E0E0"  x:Name="WebShopButton" Click="ViewCharButton_Click" Width="96" Height="28" BorderThickness="0,0,0,1" BorderBrush="#B2000000">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0.183"/>
+                            <GradientStop Color="#CC000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="ROYAL PASS" Style="{StaticResource srHomeButton}" FontSize="10" Foreground="#FFE0E0E0"  x:Name="RoyalPassButton" Click="ViewCharButton_Click" Width="96" Height="28" BorderThickness="0,0,0,1" BorderBrush="#B2000000">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0.183"/>
+                            <GradientStop Color="#CC000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="RANKING" Style="{StaticResource srHomeButton}" FontSize="10" Foreground="#FFE0E0E0"  x:Name="RankingButton" Click="ViewCharButton_Click" Width="96" Height="25" BorderThickness="0,0,0,1" BorderBrush="#B2000000">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0.183"/>
+                            <GradientStop Color="#CC000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="GUIDE" Style="{StaticResource srHomeButton}" FontSize="10" Foreground="#FFE0E0E0"  x:Name="GuideButton" Click="GuideButton_Click" Width="96" Height="25" BorderThickness="0,0,0,1" BorderBrush="#B2000000">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0.183"/>
+                            <GradientStop Color="#CC000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

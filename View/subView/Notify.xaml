@@ -1,0 +1,23 @@
+﻿<Window x:Class="SRO_INGAME.View.subView.Notify"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SRO_INGAME.View.subView"
+        mc:Ignorable="d"
+        Title="Notifiy" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Topmost="True" Height="169" Width="633" ShowInTaskbar="False" Cursor="{StaticResource Cursor}">
+
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\mo3ly\Desktop\Personal\Silkroad\C#\SRO_INGAME\SRO_INGAME\Resources\notification_bg.png"/>
+    </Window.Background>
+
+    <Grid>
+        <TextBlock x:Name="nTitle" HorizontalAlignment="Center" Margin="0,22,0,0" TextWrapping="Wrap" Text="Notification" VerticalAlignment="Top" Foreground="#FF72683F" FontFamily="Times New Roman" FontSize="36">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock x:Name="nContent" Foreground="#FFA0A0A0" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,100,0,0" FontFamily="Times New Roman" FontSize="20" Height="45" Text="Lorem Ipsum is simply dummywhen an  took a galley of type and scrambled " />
+
+    </Grid>
+</Window>
